@@ -9,7 +9,7 @@ background-color:#FFFFFF;
 font-family: 'Arial';font-size: 29px;
 padding:0px;
 color:	#000000
-text-align:center;
+text-align: center;
 }
 
 
@@ -169,6 +169,64 @@ color: #ebe6e6 ;
 background-color: transparent;
 } 
     
+/* Form CSS*/
+
+legend{
+    text-align: center;
+    font-family: andale mono, monospace;
+    font-weight: bold;
+}
+
+label{
+    text-align: center;
+    font-family: andale mono, monospace;
+    font-weight: bold;
+}
+
+option{
+    text-align: center;
+    font-family: andale mono, monospace;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: grey;
+    border-radius: 10px;
+    font-family: andale mono, monospace;
+    font-weight: bold;
+    font-family: andale mono, monospace;
+    font-weight: bold; 
+}
+
+
+select {
+    width: 100%;
+    padding:10px;
+    border-radius:10px;
+    font-family: andale mono, monospace;
+    font-weight: bold;
+}
+
+input[type=Submit]{
+background-color:#00CCFF; 
+}
+
+input[type=Submit]:hover{
+    background-color:#ff8c00; 
+   transition: .5s;
+}
+
+
+/* Form Animations CSS*/
+
+
+
     
     
 footer{

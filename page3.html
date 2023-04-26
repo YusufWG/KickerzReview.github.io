@@ -6,6 +6,37 @@
 <title>Yusuf Goodman Project</title>
 <meta name="author" content="Yusuf Goodman"/>
 <link href="style2.css" rel="stylesheet" type="text/css" />
+
+<script>
+  function validateForm() {
+      let x = document.forms["form"]["title"].value;
+      let y = document.forms["form"]["email"].value;
+      let z  = document.forms["form"]["review"].value;
+
+      if (x == "") {
+        alert("Please Input Your Name!");
+        return false;
+      }
+
+      if ( y == "") {
+        alert("Please Input Your Email!");
+        return false;
+      }
+ 
+      if ( z == "") {
+        alert("Please Input A Jersey!");
+        return false;
+      }
+
+      else{
+        alert("Thank You For Filling Out Our Form!");
+        return true;
+      }
+    }
+  
+  </script>
+
+
 </head>
 <body>
    
@@ -24,24 +55,77 @@
 
 <!-- Header 2 & Paragraph --> 
 
-<h3>Error!!</h3>
+<h2>Contact Us</h2>
 </br>
 
-<h3>Whopsie, We've seemed to scuff the kick.</h3>
+<p > Want to have your jersey of choice featured on our page? Fill out the form below and will get to you as soon as possible.</p>
 </br>
-<h3>Don't Worry I will add the contents of this page later in the course.</h3>
+<!-- Beginning of Form-->
 
-<!-- Logo and br tags to add space -->  
-<img src="images/soccerpost.jpg" class="img2"/>
+<form action="it3203sp.php" method="post" name="form" onsubmit=" return validateform()">
+<fieldset>
+<legend> Contact Information</legend>
+
+
+<p>
+<label>Name: </label>
+<input type="text" name="title" >
+</p>
+<p> 
+
+
+
+<label>Email: </label>
+<input type="text" name="email">
+</p>
+<p> 
+
+    
+
+<option>Choose An Age Range: </option>
+<select name ="age" >
+</option>Under 18</option>
+<option>18-25</option>
+<option>25-40</option>
+<option>40+</option>
+</select>
+</p>
+<p> 
+
+
+<label>Jersey For Review: </label>
+    <input type="text" name="review" >
+</p>
+<p> 
+
+<option>Type Of Jersey: </option> 
+<select name ="jersey"> 
+<option>Home</option> 
+<option>Away</option> 
+<option>Third</option> 
+<option>Special</option> 
+</select> 
+  
+
+</p>
+<p>
+
+
+  <input type="submit" name="" value="Submit">
+
+
+</fieldset>
+</form>
+
 
 </br></br></br>
 
 <!--Footer -->  
+
 <footer> 
 <h4>Contact Us</h4>
 </br> Email: ygoodman@students.kennesaw.edu</br> 
 </br> Phone Number: 678-999-28212</br>   
 </br> Additional Info: This website is a project if you'd like to learn more visit <a href=" https://it5443.azurewebsites.net"> https://it5443.azurewebsites.net</a>
 </footer>    
-
 
